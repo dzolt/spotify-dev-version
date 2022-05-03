@@ -27,7 +27,6 @@ export default function Center() {
   useEffect(() => {
     setColor(shuffle(COLORS).pop());
   }, [playlistId]);
-
   useEffect(() => {
     spotifyApi
       .getPlaylist(playlistId)
